@@ -24,7 +24,7 @@ public class RootConfiguration {
         properties.load(this.getClass().getResourceAsStream("/db.properties"));
         dataSource.setUsername(properties.getProperty("jdbc.username"));
         dataSource.setPassword(properties.getProperty("jdbc.password"));
-        dataSource.setUrl(properties.getProperty("jdbc.password"));
+        dataSource.setUrl(properties.getProperty("jdbc.url"));
         dataSource.setDriverClassName(properties.getProperty("jdbc.driver"));
         dataSource.setInitialSize(2);
         dataSource.setMaxActive(8);

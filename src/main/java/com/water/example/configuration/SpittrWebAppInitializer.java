@@ -15,12 +15,12 @@ public class SpittrWebAppInitializer  extends AbstractAnnotationConfigDispatcher
 
     @Override
     protected Class<?>[] getRootConfigClasses() {//指定配置类
-        return new Class[]{WebConfiguration.class};
+        return new Class[]{SecurityConfiguration.class,RootConfiguration.class};
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{RootConfiguration.class};
+        return new Class[]{WebConfiguration.class};
     }
 
     @Override
